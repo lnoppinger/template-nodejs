@@ -17,4 +17,12 @@ routes.use( (req, res, next) => {
 })
 
 
+// send error Codes
+routes.use( (req, res) => {
+    if(!res.headersSent) {
+        res.send()
+    }
+})
+
+
 module.exports = routes
