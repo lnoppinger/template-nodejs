@@ -5,7 +5,5 @@ services:
   app:
     build: ../
     restart: on-failure
-    depends_on:
-      - db
     volumes:
       - ..:/workspace:cached
